@@ -1,0 +1,88 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Roboto';
+}
+
+.main {
+  height: 100vh;
+}
+
+.main #splash1 {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 30vw;
+}
+
+.main #sebarz {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  position: absolute;
+  top: 110%;
+  left: -50px;
+  font-size: 12em;
+  text-transform: uppercase;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  color: #DBDBDB;
+  z-index: -1;
+}
+
+.main .hello {
+  position: absolute;
+  top: 70%;
+  right: 52%;
+}
+
+.main .hello h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.main .hello p {
+  font-size: 2em;
+  font-weight: 500;
+  color: #a9a9a9;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 10px 10px 150px;
+  padding: 10px;
+  width: 50%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+
+nav ul a {
+  font-size: 1.2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  list-style: none;
+  text-decoration: none;
+  color: #585858;
+}
+/*# sourceMappingURL=style.css.map */
