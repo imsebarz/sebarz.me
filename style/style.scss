@@ -4,6 +4,7 @@
     margin: 0;
     font-size: 16px;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 
 nav{
@@ -48,6 +49,12 @@ nav{
         color:#DBDBDB;
         z-index: -1;
     }
+    #heroiam{
+            position: absolute;
+            left: 57%;
+            height: 36vw;
+            width: auto;
+        }
     .hello{
         position: absolute;
         top: 70%;
@@ -61,12 +68,40 @@ nav{
             font-weight: 500;
             color: #a9a9a9;
         }
-        #heroiam{
-            position: absolute;
-            bottom: 30px;
-            left: 110%;
-            height: 36vw;
-            width: auto;
-        }
+    
+    }
+}
+
+.aboutme{
+    height: 150vh;
+    margin-top: 80px;
+    overflow: hidden;
+    #splash2{
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        width: 30vw;
+    }
+    #aboutme{
+        transform: rotate(90deg);
+        transform-origin: left top;
+        position: absolute;
+        font-weight: 900;
+        left: 100%;
+        top: 60vw;
+        line-height: 100px;
+        font-size: 8em;
+        overflow: hidden;
+        text-transform: uppercase;
+        width: max-content;
+        color:#DBDBDB;
+        z-index: -1;
+    }
+    #heroabout{
+        position: relative;
+        height: 40vw;
+        left: 10%;
+        top: 10vw;
+        width: auto;
     }
 }
