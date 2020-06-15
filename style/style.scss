@@ -6,44 +6,6 @@
     font-family: 'Roboto';
 }
 
-.main{
-    height: 100vh;
-    #splash1{
-        position: absolute;
-        right: 0;
-        z-index: -1;
-        width: 30vw;
-    }
-    #sebarz{
-        transform: rotate(-90deg);
-        transform-origin: left top;
-        position: absolute;
-        top: 110%;
-        left: -50px;
-        font-size: 12em;
-        text-transform: uppercase;
-        width: max-content;
-        color:#DBDBDB;
-        z-index: -1;
-    }
-    .hello{
-        position: absolute;
-        top: 70%;
-        right: 52%;
-        h1{
-            font-size: 4em;
-            font-weight: 900;
-        }
-        p{
-            font-size: 2em;
-            font-weight: 500;
-            color: #a9a9a9;
-        }
-    }
-}
-
-
-
 nav{
     display: flex;
     justify-content: space-around;
@@ -64,4 +26,50 @@ nav{
         }
     }
 }
+
+.main{
+    height: 100vh;
+    #splash1{
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        width: 30vw;
+    }
+    #sebarz{
+        transform: rotate(-90deg);
+        transform-origin: left top;
+        position: absolute;
+        top: 120%;
+        left: -50px;
+        font-size: 12em;
+        text-transform: uppercase;
+        width: max-content;
+        color:#DBDBDB;
+        z-index: -1;
+    }
+    .hello{
+        position: absolute;
+        top: 70%;
+        right: 52%;
+        h1{
+            font-size: 4em;
+            font-weight: 900;
+        }
+        p{
+            font-size: 2em;
+            font-weight: 500;
+            color: #a9a9a9;
+        }
+        #heroiam{
+            position: absolute;
+            bottom: 0;
+            left: 110%;
+            height: 500px;
+            width: 500px;
+        }
+    }
+}
+
+
+
 
