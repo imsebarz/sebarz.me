@@ -49,18 +49,19 @@ nav ul a {
   position: absolute;
   right: 0;
   z-index: -1;
-  width: 30vw;
+  width: 28vw;
 }
 
 .main #sebarz {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   -webkit-transform-origin: left top;
           transform-origin: left top;
   position: absolute;
-  top: 120%;
-  left: -50px;
-  font-size: 12em;
+  font-weight: 900;
+  left: 165px;
+  top: -4%;
+  font-size: 11em;
   text-transform: uppercase;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -88,9 +89,9 @@ nav ul a {
 
 .main .hello #heroiam {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 110%;
-  height: 500px;
-  width: 500px;
+  height: 36vw;
+  width: auto;
 }
 /*# sourceMappingURL=style.css.map */
