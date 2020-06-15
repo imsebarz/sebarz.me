@@ -135,4 +135,35 @@ nav ul a {
   top: 10vw;
   width: auto;
 }
+
+.aboutme .about {
+  position: relative;
+  left: 50%;
+  bottom: 30%;
+  width: 33%;
+}
+
+.aboutme .about h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.aboutme .about p {
+  font-size: 1.4em;
+  font-weight: 400;
+  color: #8d8d8d;
+  margin: 10% 0;
+}
+
+.aboutme .about button {
+  background-color: #F16500;
+  padding: 15px;
+  border-radius: 10px;
+  width: 150px;
+  line-height: 10px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4em;
+  border: none;
+}
 /*# sourceMappingURL=style.css.map */
