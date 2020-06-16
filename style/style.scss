@@ -73,7 +73,7 @@ nav{
 }
 
 .aboutme{
-    height: 150vh;
+    height: 130vh;
     margin-top: 80px;
     overflow: hidden;
     #splash2{
@@ -131,6 +131,72 @@ nav{
             font-size: 1.4em;
             border: none;
     
+        }
+    }
+}
+
+.myskills{
+    height: 100vh;
+    overflow: hidden;
+    #myskills{
+        transform: rotate(90deg);
+        transform-origin: left top;
+        position: relative;
+        font-weight: 900;
+        left: 12px;
+        top: 3%;
+        font-size: 8em;
+        text-transform: uppercase;
+        width: max-content;
+        color:#DBDBDB;
+        z-index: -1;
+    }
+
+    h1{
+        width: 100%;
+        text-align: center;
+        font-size: 4em;
+        font-weight: 900;
+        margin-top: -4%;        
+    }
+    .cards{
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: center;
+        height: 75%;
+        padding: 6%;
+        text-align: center;
+        h1{
+            font-size: 1.8em;
+            font-weight: 400;
+            text-align: left;
+        }
+        p{
+            font-weight: 300;
+            font-size: 1.2em;
+        }
+        div{
+            padding: 2%;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            margin: 3%;
+            width: 20%;
+            height: 85%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #card1{
+            background: linear-gradient(180deg, #E06B15 5.84%, #FF9549 100%);
+            color: white;
+        }
+        #card2{
+            border-left: 6px solid #E06B15;
+        }
+        #card3{
+            border-left: 6px solid #49C5D6; 
         }
     }
 }
