@@ -85,7 +85,7 @@ nav ul a {
 }
 
 .main .hello h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 900;
 }
 
@@ -144,7 +144,7 @@ nav ul a {
 }
 
 .aboutme .about h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 900;
 }
 
@@ -193,7 +193,7 @@ nav ul a {
 .myskills h1 {
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 900;
   margin-top: -4%;
 }
@@ -257,5 +257,49 @@ nav ul a {
 
 .myskills .cards #card3 {
   border-left: 6px solid #49C5D6;
+}
+
+.myproyects {
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(/images/proyectsbg.svg);
+}
+
+.myproyects #proyectsabout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.myproyects #proyectsabout #proyectsabouttext h1 {
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+}
+
+.myproyects #proyectsabout #proyectsabouttext p {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 300;
+}
+
+.myproyects #proyectsabout button {
+  background-color: #F16500;
+  padding: 10px;
+  border-radius: 10px;
+  width: 230px;
+  line-height: 5px;
+  color: white;
+  font-weight: 400;
+  font-size: 1.4em;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
