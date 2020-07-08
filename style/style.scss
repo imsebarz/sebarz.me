@@ -4,6 +4,7 @@
     margin: 0;
     font-size: 16px;
     font-family: 'Roboto';
+    text-decoration: none;
 }
 
 nav{
@@ -282,10 +283,25 @@ nav{
     justify-content: center;
     .email{
         background-color: white;
+        position: relative;
+        bottom: 50%;
+        width: 50vw;
+        height: 25vh;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
         border-radius: 10px;
-        color: green;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-    }
+        font-weight: 900;
+        h1{
+            font-size: 2em;
+            color: gray;
+        }
+        a{
+            text-decoration: none;
+            color: #59C18D;
+            font-size: 3em;
+        }
 
+    }
 }
