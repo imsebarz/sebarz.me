@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   text-decoration: none;
 }
 
@@ -17,9 +17,14 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 10px 10px 150px;
+  margin: 10px 10px 10px 120px;
   padding: 10px;
-  width: 50%;
+  width: 65%;
+}
+
+nav img {
+  width: 6em;
+  height: auto;
 }
 
 nav ul {
@@ -29,7 +34,7 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 65%;
 }
 
 nav ul a {
@@ -67,7 +72,7 @@ nav ul a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #DBDBDB;
+  color: #dbdbdb;
   z-index: -1;
 }
 
@@ -124,7 +129,7 @@ nav ul a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #DBDBDB;
+  color: #dbdbdb;
   z-index: -1;
 }
 
@@ -156,7 +161,7 @@ nav ul a {
 }
 
 .aboutme .about button {
-  background: radial-gradient(46.66% 46.66% at 50.73% 42.76%, #34DB63 0%, #59C18D 100%);
+  background: radial-gradient(46.66% 46.66% at 50.73% 42.76%, #34db63 0%, #59c18d 100%);
   border-radius: 10px;
   padding: 20px;
   width: 150px;
@@ -186,7 +191,7 @@ nav ul a {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: #DBDBDB;
+  color: #dbdbdb;
   z-index: -1;
 }
 
@@ -246,25 +251,25 @@ nav ul a {
 }
 
 .myskills .cards #card1 {
-  background: linear-gradient(174.8deg, #34DB63 1.27%, #59C18D 101.37%);
+  background: linear-gradient(174.8deg, #34db63 1.27%, #59c18d 101.37%);
   color: white;
 }
 
 .myskills .cards #card2 {
-  border-left: 6px solid #59C18D;
+  border-left: 6px solid #59c18d;
 }
 
 .myskills .cards #card3 {
   border-left: 6px solid #008585;
 }
 
-.myproyects {
+#myproyects {
   height: 130vh;
   overflow: hidden;
   background-image: url(/images/proyectsbg.svg);
 }
 
-.myproyects #proyectsabout {
+#myproyects #proyectsabout {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -277,21 +282,21 @@ nav ul a {
       justify-content: space-around;
 }
 
-.myproyects #proyectsabout #proyectsabouttext h1 {
+#myproyects #proyectsabout #proyectsabouttext h1 {
   font-size: 3em;
   font-weight: 900;
   color: white;
   text-transform: uppercase;
 }
 
-.myproyects #proyectsabout #proyectsabouttext p {
+#myproyects #proyectsabout #proyectsabouttext p {
   color: white;
   font-size: 1.4em;
   font-weight: 300;
 }
 
-.myproyects #proyectsabout button {
-  background-color: #59C18D;
+#myproyects #proyectsabout button {
+  background-color: #59c18d;
   padding: 5px;
   border-radius: 10px;
   width: 230px;
@@ -343,7 +348,7 @@ nav ul a {
 }
 
 .swiper-container .swiper-slide .text {
-  height: 70px;
+  height: 100px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -359,11 +364,21 @@ nav ul a {
   padding: 15px;
 }
 
+.swiper-container .swiper-slide .text img {
+  width: 30px;
+  padding: 10px 0;
+  height: auto;
+}
+
 .sayhello {
-  height: 30vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -373,10 +388,10 @@ nav ul a {
           justify-content: center;
 }
 
-.sayhello .email {
+.sayhello #email {
   background-color: white;
   position: relative;
-  bottom: 50%;
+  bottom: 35%;
   width: 50vw;
   height: 25vh;
   -webkit-box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
@@ -395,14 +410,32 @@ nav ul a {
   font-weight: 900;
 }
 
-.sayhello .email h1 {
+.sayhello #email h1 {
   font-size: 2em;
   color: gray;
 }
 
-.sayhello .email a {
+.sayhello #email a {
   text-decoration: none;
-  color: #59C18D;
+  color: #59c18d;
   font-size: 3em;
+}
+
+.sayhello .footer-nav {
+  width: 50%;
+  height: 10px;
+  margin: 0 auto;
+  position: relative;
+  bottom: 10%;
+}
+
+.sayhello .logos-nav {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.sayhello .logos-nav img {
+  width: 35px;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */
