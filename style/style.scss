@@ -17,6 +17,10 @@ nav {
   img {
     width: 6em;
     height: auto;
+    transition: all 0.2s ease;
+  }
+  img:hover {
+    transform: rotate(360deg);
   }
   ul {
     display: flex;
@@ -28,6 +32,12 @@ nav {
       list-style: none;
       text-decoration: none;
       color: #585858;
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      font-size: 1.5em;
+      color: #59c18d;
+      font-weight: 500;
     }
   }
 }
@@ -124,19 +134,24 @@ nav {
     }
 
     button {
-      background: radial-gradient(
-        46.66% 46.66% at 50.73% 42.76%,
-        #34db63 0%,
-        #59c18d 100%
-      );
+      background: white;
+      color: black;
+      outline: none;
       border-radius: 10px;
       padding: 20px;
       width: 150px;
+      border: none;
       line-height: 10px;
-      color: white;
       font-weight: 400;
       font-size: 1.4em;
-      border: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: #59c18d 3px solid;
+    }
+    button:hover {
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+      background: #59c18d;
+      color: white;
     }
   }
 }
@@ -184,7 +199,7 @@ nav {
     }
     div {
       padding: 2%;
-      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
       border-radius: 20px;
       margin: 3%;
       width: 20%;
@@ -192,12 +207,19 @@ nav {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      transition: all 0.3s ease;
     }
 
     #card1 {
       background: linear-gradient(174.8deg, #34db63 1.27%, #59c18d 101.37%);
       color: white;
     }
+
+    div:hover {
+      box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+      transform: scale(1.1);
+    }
+
     #card2 {
       border-left: 6px solid #59c18d;
     }
@@ -230,15 +252,24 @@ nav {
       }
     }
     button {
-      background-color: #59c18d;
+      background: white;
+      color: #150140;
       padding: 5px;
       border-radius: 10px;
       width: 230px;
       height: 70px;
       line-height: 5px;
-      color: white;
       font-weight: 400;
       font-size: 1.4em;
+      outline: none;
+      transition: all 0.2s;
+      cursor: pointer;
+      border: white 3px solid;
+    }
+    button:hover {
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.2);
+      background: #59c18d;
+      color: white;
       border: none;
     }
   }
@@ -299,14 +330,15 @@ nav {
     background-color: white;
     position: relative;
     bottom: 35%;
-    width: 50vw;
+    width: 45vw;
     height: 25vh;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-weight: 900;
+    transition: all 0.3s ease;
     h1 {
       font-size: 2em;
       color: gray;
@@ -316,6 +348,10 @@ nav {
       color: #59c18d;
       font-size: 3em;
     }
+  }
+  #email:hover {
+    transform: scale(1.1);
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
   }
   .footer-nav {
     width: 50%;
@@ -328,8 +364,11 @@ nav {
     width: 30%;
     margin: 0 auto;
     img {
-      width: 35px;
+      width: 40px;
       height: auto;
+    }
+    img:hover {
+      transform: scale(1.5) rotate(360deg);
     }
   }
 }
