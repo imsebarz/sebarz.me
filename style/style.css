@@ -348,7 +348,7 @@ nav ul a {
 }
 
 .swiper-container .swiper-slide .text {
-  height: 100px;
+  height: 130px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,9 +365,13 @@ nav ul a {
 }
 
 .swiper-container .swiper-slide .text img {
-  width: 30px;
-  padding: 10px 0;
+  width: 40px;
+  padding: 10px 5px;
   height: auto;
+}
+
+.swiper-container .swiper-slide .text p {
+  padding: 5px;
 }
 
 .sayhello {

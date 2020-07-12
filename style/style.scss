@@ -269,7 +269,7 @@ nav {
       border-radius: 10px 10px 0 0;
     }
     .text {
-      height: 100px;
+      height: 130px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -277,9 +277,12 @@ nav {
       justify-content: center;
       padding: 15px;
       img {
-        width: 30px;
-        padding: 10px 0;
+        width: 40px;
+        padding: 10px 5px;
         height: auto;
+      }
+      p {
+        padding: 5px;
       }
     }
   }

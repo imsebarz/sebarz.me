@@ -14,10 +14,10 @@
       <nav>
         <a href="#"><img src="/images/logo.svg"></a>
         <ul> 
-          <a href="#heroabout">About me</a>
-          <a href="#myskills">My skills</a>
-          <a href="#myproyects">Proyects</a>
-          <a href="#email">Contact me</a>
+          <a class='gotoabout' href="#">About me</a>
+          <a class='gotoskills' href="#">My skills</a>
+          <a class='gotoproyects' href="#">Proyects</a>
+          <a class='gotoemail' href="#">Contact me</a>
         </ul>
       </nav>
       <img src="/images/Hero I´M.png" id="heroiam">
@@ -65,7 +65,7 @@
           <h1>My proyects</h1>
           <p>Some of the stuff i’ve been doing</p>
         </div>
-        <button>Visit my github</button>
+        <a href="https://github.com/sebarz" target="_blank"><button>Visit my github</button></a>
       </div>
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -74,7 +74,10 @@
             <div class="text">
               <h3>Proyecto 1</h3>
               <p>breve descripcion del pryecto numero uno pero en inglés</p>
-              <a href=""><img src="/images/insta.png" alt=""></a>
+              <div id="code-container">
+                <a href=""><img src="/images/code.svg" alt=""></a>
+                <a href=""><img src="/images/demo.svg" alt=""></a>
+              </div>            
             </div>
           </div>
           <div class="swiper-slide">
@@ -82,22 +85,31 @@
             <div class="text">
               <h3>Proyecto 2</h3>
               <p>breve descripcion del pryecto numero dos pero en inglés</p>
-              <a href=""><img src="/images/insta.png" alt=""></a>
+              <div id="code-container">
+                <a href=""><img src="/images/code.svg" alt=""></a>
+                <a href=""><img src="/images/demo.svg" alt=""></a>
+              </div>            
             </div>
           </div>
           <div class="swiper-slide">
             <a href=""><img src="/images/negro.jpg" alt=""></a>
             <div class="text">
               <h3>Proyecto 3</h3>
-              <p>breve descripcion del pryecto numero tres pero en inglés</p>
-              <a href=""><img src="/images/insta.png" alt=""><img src="/images/linkedin.png" alt=""></a>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nemo harum sed alias quisquam. Id eveniet rem praesentium officiis deleniti.</p>
+              <div id="code-container">
+                <a href=""><img src="/images/code.svg" alt=""></a>
+                <a href=""><img src="/images/demo.svg" alt=""></a>
+              </div>
             </div>
           </div><div class="swiper-slide">
             <img src="/images/negro.jpg" alt="">
             <div class="text">
               <h3>Proyecto 4</h3>
               <p>breve descripcion del pryecto numero cuatro pero en inglés</p>
-              <a href=""><img src="/images/insta.png" alt=""></a>
+              <div id="code-container">
+                <a href=""><img src="/images/code.svg" alt=""></a>
+                <a href=""><img src="/images/demo.svg" alt=""></a>
+              </div>            
             </div>
           </div>
         </div>
@@ -110,21 +122,54 @@
       </div>
       <nav class="footer-nav">
         <ul> 
-          <a href="#heroabout">About me</a>
-          <a href="#myskills">My skills</a>
-          <a href="#myproyects">Proyects</a>
+          <a class='gotoabout' href="#">About me</a>
+          <a class='gotoskills' href="#">My skills</a>
+          <a class='gotoproyects' href="#">Proyects</a>
         </ul>
       </nav>
       <nav class="logos-nav">
         <ul> 
-          <a href="#aboutme"><img src="/images/github.png"></a>
-          <a href="#"><img src="/images/insta.png"></a>
-          <a href="#"><img src="/images/linkedin.png"></a>
+          <a href="https://github.com/sebarz" target="_blank"><img src="/images/github.png"></a>
+          <a href="https://www.instagram.com/sebarz7/" target="_blank"><img src="/images/insta.png"></a>
+          <a href="https://www.linkedin.com/in/sebarzp/" target="_blank"><img src="/images/linkedin.png"></a>
         </ul>
       </nav>
     </section>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
+    <script type="module">
+      import jump from './node_modules/jump.js/dist/jump.module.js'
+
+      const about = document.querySelectorAll('.gotoabout')
+      const skills = document.querySelectorAll('.gotoskills')
+      const proyects = document.querySelectorAll('.gotoproyects')
+      const contact = document.querySelector('.gotoemail')
+
+      about.forEach(el => {
+        el.addEventListener('click', () => {
+        jump('.aboutme', {
+          offset: 160
+        })
+      })
+    })
+
+    skills.forEach(el => {
+        el.addEventListener('click', () => {
+        jump('.myskills')
+      })
+    })
+
+    proyects.forEach(el => {
+        el.addEventListener('click', () => {
+        jump('#myproyects', {
+          offset: 80
+        })
+      })
+    })
+
+    contact.addEventListener('click', () => {
+      jump('#email')
+    })
+
       var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
         grabCursor: true,
